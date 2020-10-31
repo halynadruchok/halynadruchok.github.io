@@ -1,0 +1,237 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+
+/* html{
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variation-settings: 'wght'500;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* border-right: 1px solid #000; */
+    /* border-left: 1px solid #000; */
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 0 10px 0 blue;
+}
+
+.header-logo {
+    width: 20%;
+    /* background-color: pink; */
+}
+
+.logo-link {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+.header-menu {
+    width: 50%;
+    /* background-color: deeppink; */
+}
+
+.menu-link {
+    text-decoration: none;
+    color:blue;
+    font-size: 20px;
+    /* padding: 10px; */
+    text-transform: uppercase;
+    transition-property: transform;
+    transition-duration: 0.7s;
+}
+
+.menu-link:hover {
+    transform: scale(1.2);
+}
+
+.section {
+    height: 100vh;
+    padding-top: 60px;
+}
+
+#home {
+    /* background-color: lightblue; */
+    background-image: url('../images/DSC_6758.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home-title {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-title span {
+    padding: 10px;
+    font-size: 40px;
+}
+
+#about {
+    background-color: #fefefe;
+}
+
+.about-photo {
+    width: 30%;
+    height: 70vh;
+    background: lightskyblue;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #141517, lightskyblue);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #141517, lightskyblue);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.about-info{
+    width: 50%;
+}
+
+.about-info p{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.about-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-icons i{
+    font-size: 80px;
+}
+
+.about-icons i:nth-of-type(1){
+    color: #4c6ef5;
+}
+
+.about-icons i:nth-of-type(2){
+    color: #f783ac;
+}
+
+.about-icons i:nth-of-type(3){
+    color: #15aabf;
+}
+
+#trips {
+    /* background-color: lightgrey; */
+    background-image: url('../images/DSC_6671.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.trips-box{
+    width: 30%;
+    height: 230px;
+    border: 2px solid #000; 
+    border-radius: 10px;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    opacity: 0.5;
+    transition-property: opacity, transform;
+    transition-duration: 0.7s;
+}
+
+.trips-box:hover{
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#contact {
+    background-color: #fefefe;
+}
+
+.contact-info{
+    width: 20%;
+}
+
+.contact-info p{
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label{
+    margin-bottom: 5px;
+}
+
+.form-group input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.form-group textarea{
+    height: 100px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+.form-group input::placeholder, 
+.form-group textarea::placeholder{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variation-settings: 'wght' 300;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus{
+    box-shadow: 0 0 2px 1px rgb(78, 78, 235);
+    outline: none;
+}
+
+.contact-map{
+    width: 70%;
+    height: 70vh;
+}
+
+.footer{
+    height: 60px;
+    background-color: rgb(41, 40, 40);
+    color: #fefefe;
+    font-size: 22px;
+}
+
+
+.footer .social a{
+    color: #fefefe;
+    text-decoration: none;
+    padding: 0 20px;
+}
